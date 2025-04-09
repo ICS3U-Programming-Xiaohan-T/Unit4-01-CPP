@@ -19,7 +19,8 @@ int main() {
     // Check if the input contains a decimal point
     // If a decimal is found, print the error message and stop the program
     if (userInput.find('.') != std::string::npos) {
-        std::cout << "Invalid input. Please enter a positive integer." << std::endl;
+        std::cout << "Invalid input. Please enter a positive integer."
+        << std::endl;
     } else {
         try {
             // Convert the input string to an integer
@@ -41,7 +42,8 @@ int main() {
             }
         } catch (std::invalid_argument const &err) {
             // If input is not a valid integer (like letters or symbols)
-            std::cout << "Invalid input. Please enter a positive integer." << std::endl;
+            std::cout << "Invalid input. Please enter a positive integer."
+            << std::endl;
         }
     }
 }
